@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Make Your Grocery List!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	    <script src="grocery.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <h1 class="main_header">You're Grocery List</h1>
+            <button id="logout" onclick="logout()" class="btn btn-danger">Logout</button>
+            <br>
+            <div class="container">
+                <img src="download.jpg" style="width:25%">
+                <div class="text-block">
+                    <h4>Start Your List:</h4>
+                    <textarea id="textid" class="text_area"></textarea>
+                </div>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <input type="text" id="input" class="input" placeholder="Type Item Here">
+                <br><br>
+                <button id="send" class="grocery_user" onclick="add()">Add</button>
+            </div>
+            <br>
+            <label id="note" class="label">After you've written everything, take a picture on your phone!</label>
+        </center>
+    </body>
+</html>
